@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import Main from "components/Main";
+import "App.css";
+
+const StyledHeader = styled.header`
+  height: 80px;
+  background-color: #73a1ca;
+  text-align: center;
+  padding-top: 10px;
+  font-family: monospace;
+  font-size: 42px;
+  color: #e0dada;
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StyledHeader className="App-header">Battle Simulator</StyledHeader>
+      <Main />
     </div>
   );
 }
