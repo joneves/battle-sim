@@ -25,6 +25,7 @@ const Dice: FC<Props> = ({ value }) => {
     <div className="dice" style={{ width: 300 }}>
       {dice.map((die, index) => (
       <ol
+        key={`die-${index}`}
         ref={die}
         className="die-list even-roll"
         data-roll={value[index]}

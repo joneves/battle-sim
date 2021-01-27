@@ -27,7 +27,7 @@ const ResultText = styled.div<ResultProps>`
   height: 200px;
   color: ${({ isWinner, isLoser }) =>
     isWinner ? "green" : isLoser ? "red" : "white"};
-  font-size: 6rem;
+  font-size: 5rem;
   display: ${({ isWinner, isLoser }) =>
     isWinner || isLoser ? "block" : "none"};
 `;
